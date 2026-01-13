@@ -40,7 +40,7 @@ if st.button("Architect My Video") and uploaded_images:
         try:
             # Setup Gemini
             genai.configure(api_key=api_key)
-            model = genai.GenerativeModel(model_name="gemini-1.5-pro", system_instruction=SYSTEM_PROMPT)
+            model = genai.GenerativeModel(model_name="gemini-2.0-flash", system_instruction=SYSTEM_PROMPT)
             
             # Prepare images for the AI
             img_objects = [Image.open(img) for img in uploaded_images]
